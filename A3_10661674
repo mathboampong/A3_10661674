@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int a,b,holder,hcf;
+
+int main(){
+    cout << "please enter the smaller number to be compared : ";
+    cin >> a;
+    cout << endl;
+    cout << "Enter the next number to be compared : ";
+    cin >> b;
+    cout << endl;
+    while (b!=0) {
+        holder = b;
+        b = a%b;
+        a = holder;
+    }
+    hcf = a;
+    cout << "the greatest common factor is : "<< hcf << endl;
+    
+    return 0;
+}
